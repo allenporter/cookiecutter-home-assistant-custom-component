@@ -35,7 +35,7 @@ jobs:
           python-version: '3.x'
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r requirements_dev.txt
 {% endraw %}
       - run: pdoc ./{{ cookiecutter.project_name }} -o docs/
 {% raw %}
