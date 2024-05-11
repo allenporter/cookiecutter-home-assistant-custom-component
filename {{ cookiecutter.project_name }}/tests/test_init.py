@@ -1,4 +1,4 @@
-"""Tests for the {{ cookiecutter.domain }} component."""
+"""Tests for the {{ cookiecutter.project_name }} component."""
 
 import pytest
 
@@ -11,7 +11,7 @@ from pytest_homeassistant_custom_component.common import (
     async_mock_service,
 )
 
-from custom_components.{{ cookiecutter.domain }}.const import (
+from custom_components.{{ cookiecutter.project_name }}.const import (
     DOMAIN,
 )
 

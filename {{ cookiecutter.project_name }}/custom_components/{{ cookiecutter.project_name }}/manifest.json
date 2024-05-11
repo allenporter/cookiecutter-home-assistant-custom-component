@@ -1,11 +1,11 @@
 {
-    "domain": "{{ cookiecutter.domain }}",
+    "domain": "{{ cookiecutter.project_name }}",
     "name": "{{ cookiecutter.name }}",
     "codeowners": ["@{{ cookiecutter.github_username }}"],
     "config_flow": true,
-    "documentation": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.domain }}",
+    "documentation": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.project_name }}",
     "integration_type": "integration",
     "iot_class": "calculated",
-    "issue_tracker": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.domain }}/issues",
+    "issue_tracker": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.project_name }}/issues",
     "version": {{ cookiecutter.version }}"
   }

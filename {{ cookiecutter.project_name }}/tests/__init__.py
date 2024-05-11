@@ -1,1 +1,1 @@
-"""Tests for {{ cookiecutter.domain }}."""
+"""Tests for {{ cookiecutter.project_name }}."""
