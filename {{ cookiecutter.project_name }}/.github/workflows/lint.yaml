@@ -1,3 +1,5 @@
+{% raw -%}
+---
 name: Lint
 
 on:
@@ -31,3 +33,4 @@ jobs:
     - name: Static typing with mypy
       run: |
         mypy --install-types --non-interactive --no-warn-unused-ignores .
+{%- endraw %}
