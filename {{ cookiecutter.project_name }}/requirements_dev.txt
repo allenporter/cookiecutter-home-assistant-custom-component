@@ -1,4 +1,4 @@
--e .
+# Generic python dependencies
 black==24.4.2
 coverage==7.5.1
 mypy==1.10.0
@@ -9,3 +9,12 @@ pytest-benchmark==3.4.1
 pytest-cov==3.0.0
 pytest==8.2.0
 ruff==0.4.4
+
+# Home Assistant testing dependencies
+pytest-asyncio==0.23.6
+pytest-homeassistant-custom-component==0.13.111
+syrupy==4.6.1
+
+# Component dependencies
+hassil>=1.7.0
+home-assistant-intents>=2024.4.3

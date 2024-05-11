@@ -1,0 +1,11 @@
+{
+    "domain": "{{ cookiecutter.domain }}",
+    "name": "{{ cookiecutter.name }}",
+    "codeowners": ["@{{ cookiecutter.github_username }}"],
+    "config_flow": true,
+    "documentation": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.domain }}",
+    "integration_type": "integration",
+    "iot_class": "calculated",
+    "issue_tracker": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.domain }}/issues",
+    "version": {{ cookiecutter.version }}"
+  }

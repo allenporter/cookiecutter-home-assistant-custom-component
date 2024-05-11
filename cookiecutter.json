@@ -2,7 +2,8 @@
     "full_name": "Allen Porter",
     "email": "allen.porter@gmail.com",
     "github_username": "allenporter",
-    "project_name": "python_project_name",
+    "domain": "custom_component_domain",
+    "name": "Custom Component Name",
     "description": "Project short description.",
     "version": "0.0.1"
   }
