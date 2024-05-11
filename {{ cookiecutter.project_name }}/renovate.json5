@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base"
+  ],
+  "assignees": ["{{ cookiecutter.github_username }}"],
+  "packageRules": [
+    {
+      "description": "Minor updates are automatic",
+      "automerge": true,
+      "automergeType": "branch",
+      "matchUpdateTypes": ["minor", "patch"]
+    }
+  ],
+  "pip_requirements": {
+    "fileMatch": ["requirements_dev.txt"]
+  },
+  "pre-commit": {"enabled": true}
+}
