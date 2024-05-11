@@ -1,4 +1,3 @@
-{% raw -%}
 ---
 name: Test
 
@@ -16,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.11", "3.12"]
+        python-version: ["3.12"]
 
     steps:
     - uses: actions/checkout@v4
@@ -28,17 +27,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements_dev.txt ]; then pip install -r requirements_dev.txt; fi
-{% endraw %}
     - name: Test with pytest
       run: |
-        pytest --cov={{ cookiecutter.project_name }} --cov-report=term-missing
-
-{% raw %}
-
+        pytest
     - uses: codecov/codecov-action@v4
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         env_vars: OS,PYTHON
         fail_ci_if_error: true
         verbose: true
-{%- endraw %}
