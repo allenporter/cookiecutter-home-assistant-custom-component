@@ -1,5 +1,5 @@
 {
-  "domain": "{{ cookiecutter.project_name }}",
+  "domain": "{{ cookiecutter.domain }}",
   "name": "{{ cookiecutter.name }}",
   "codeowners": ["@{{ cookiecutter.github_username }}"],
   "config_flow": true,

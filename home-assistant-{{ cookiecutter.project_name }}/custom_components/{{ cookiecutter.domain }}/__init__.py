@@ -1,4 +1,4 @@
-"""{{ cookiecutter.project_name }} custom component."""
+"""{{ cookiecutter.domain }} custom component."""
 
 from __future__ import annotations
 

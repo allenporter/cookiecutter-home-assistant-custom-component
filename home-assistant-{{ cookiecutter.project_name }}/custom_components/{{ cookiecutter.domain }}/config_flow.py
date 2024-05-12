@@ -1,4 +1,4 @@
-"""Config flow for {{ cookiecutter.project_name }} integration."""
+"""Config flow for {{ cookiecutter.domain }} integration."""
 
 from __future__ import annotations
 
