@@ -1,4 +1,3 @@
-{% raw -%}
 ---
 name: Update repository with Cruft
 permissions:
@@ -48,7 +47,6 @@ jobs:
           fi
 
           echo "has_changes=$CHANGES" >> "$GITHUB_OUTPUT"
-{% endraw %}
 
       - name: Run update if available
         if: steps.check.outputs.has_changes == '1'
