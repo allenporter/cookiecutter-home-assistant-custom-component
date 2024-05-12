@@ -5,3 +5,4 @@ venv
 deps
 ls
 **/secrets.yaml
+config/
