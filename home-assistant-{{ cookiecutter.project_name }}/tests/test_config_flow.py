@@ -11,7 +11,7 @@ from homeassistant.const import (
 )
 
 
-from custom_components.{{ cookiecutter.project_name }}.const import DOMAIN
+from custom_components.{{ cookiecutter.doamin }}.const import DOMAIN
 
 
 async def test_select_device(

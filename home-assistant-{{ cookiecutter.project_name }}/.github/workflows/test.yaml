@@ -31,7 +31,7 @@ jobs:
 {% endraw %}
     - name: Test with pytest
       run: |
-        pytest --cov=custom_components.{{ cookiecutter.project_name }} --cov-report=term-missing
+        pytest --cov=custom_components.{{ cookiecutter.domain }} --cov-report=term-missing
 {% raw %}
     - uses: codecov/codecov-action@v4
       with:

@@ -34,7 +34,7 @@ OPTIONS_FLOW = {
 }
 
 
-class {{ cookiecutter.name.split('-')|map('capitalize')|join }}ConfigFlowHandler(SchemaConfigFlowHandler, domain=DOMAIN):
+class {{ cookiecutter.name.split('_')|map('capitalize')|join }}ConfigFlowHandler(SchemaConfigFlowHandler, domain=DOMAIN):
     """Handle a config flow for Switch as X."""
 
     config_flow = CONFIG_FLOW
