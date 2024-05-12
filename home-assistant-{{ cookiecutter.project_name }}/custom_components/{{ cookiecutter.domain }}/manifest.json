@@ -7,5 +7,5 @@
   "integration_type": "integration",
   "iot_class": "calculated",
   "issue_tracker": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.project_name }}/issues",
-  "version": {{ cookiecutter.version }}"
+  "version": "{{ cookiecutter.version }}"
 }
