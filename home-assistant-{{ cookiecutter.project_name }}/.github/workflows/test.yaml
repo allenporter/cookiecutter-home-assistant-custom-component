@@ -23,7 +23,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
+          python-version: {% raw %}${{ env.PYTHON_VERSION }}{% endraw %}
           cache: "pip"
           cache-dependency-path: "**/requirements_dev.txt"
       - name: Install dependencies
