@@ -12,15 +12,8 @@
       "matchUpdateTypes": ["minor", "patch"]
     }
   ],
-  "enabledManagers": [
-    "devcontainer",
-    "dockerfile",
-    "github-actions",
-    "pre-commit",
-    "pip_requirements",
-  ],
   "pip_requirements": {
-    "fileMatch": ["(^|/)[\w-]*requirements([-_.]\w+)?\.(txt|pip)$"]
+    "fileMatch": ["requirements_dev.txt"]
   },
   "pre-commit": {"enabled": true}
 }
