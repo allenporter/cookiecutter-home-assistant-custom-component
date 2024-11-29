@@ -51,6 +51,12 @@ async def mock_setup_integration(
         yield
 
 
+@pytest.fixture(name="zwave_device_id")
+def mock_zwave_device_id() -> str:
+    """Fixture for a Z-Wave device ID."""
+    return "some-device-id"
+
+
 @pytest.fixture(name="config_entry")
 async def mock_config_entry(
     hass: HomeAssistant, zwave_device_id: str
