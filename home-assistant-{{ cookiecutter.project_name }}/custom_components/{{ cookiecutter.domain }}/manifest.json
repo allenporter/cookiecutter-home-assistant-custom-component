@@ -4,7 +4,7 @@
   "codeowners": ["@{{ cookiecutter.github_username }}"],
   "config_flow": true,
   "documentation": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.project_name }}",
-  "integration_type": "integration",
+  "integration_type": "service",
   "iot_class": "calculated",
   "issue_tracker": "https://github.com/{{ cookiecutter.github_username }}/home-assistant-{{ cookiecutter.project_name }}/issues",
   "version": "{{ cookiecutter.version }}"
