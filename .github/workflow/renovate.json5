@@ -1,9 +1,7 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
-  "assignees": ["allenporter"],
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:recommended"],
+  assignees: ["allenporter"],
   "packageRules": [
     {
       "description": "Minor updates are automatic",
