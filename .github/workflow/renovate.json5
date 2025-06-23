@@ -13,7 +13,7 @@
   "pip_requirements": {
     "fileMatch": ["requirements_dev.txt"]
   },
-  "pre-commit": {"enabled": true}
+  "pre-commit": {"enabled": true},
   // Disable to avoid causing downstream patch failures
   "enabled": false
 }
