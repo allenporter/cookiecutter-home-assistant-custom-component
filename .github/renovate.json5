@@ -19,12 +19,13 @@
   ],
   pip_requirements: {
     managerFilePatterns: [
-      // Limit to top level project to avoid conflicts in the template with
-      // downstream updates that scruft can't merge.
       '/^requirements_dev.txt$/',
     ],
   },
   'pre-commit': {
     enabled: true,
   },
+  // Disable to avoid conflicts in template changes with the downstream project
+
+  enabled: false,
 }
