@@ -1,0 +1,30 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:recommended',
+  ],
+  assignees: [
+    'allenporter',
+  ],
+  packageRules: [
+    {
+      description: 'Minor updates are automatic',
+      automerge: true,
+      automergeType: 'branch',
+      matchUpdateTypes: [
+        'minor',
+        'patch',
+      ],
+    },
+  ],
+  pip_requirements: {
+    managerFilePatterns: [
+      // Limit to top level project to avoid conflicts in the template with
+      // downstream updates that scruft can't merge.
+      '/^requirements_dev.txt$/',
+    ],
+  },
+  'pre-commit': {
+    enabled: true,
+  },
+}
