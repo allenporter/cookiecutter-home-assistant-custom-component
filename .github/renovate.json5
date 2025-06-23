@@ -26,6 +26,5 @@
     enabled: true,
   },
   // Disable to avoid conflicts in template changes with the downstream project
-
-  enabled: false,
+  ignorePaths: ["/home-assistant-\{\{ cookiecutter.project_name \}\}/**"]
 }
