@@ -47,4 +47,8 @@ class {{ cookiecutter.name.replace(' ', '') }}ConfigFlowHandler(SchemaConfigFlow
         """Return config entry title."""
         registry = dr.async_get(self.hass)
         device_entry = registry.async_get(options[CONF_DEVICE_ID])
-        return device_entry.name_by_user or device_entry.name
+        if device_entry is not None:
+            title = device_entry.name_by_user or device_entry.name
+            if title is not None:
+                return title
+        return "Unknown Device"

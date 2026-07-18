@@ -1,4 +1,5 @@
 {
-    "name": "{{ cookiecutter.name }}",
-    "homeassistant": "2024.04.00"
-  }
+  "name": "{{ cookiecutter.name }}",
+  "homeassistant": "2024.04.00",
+  "render_readme": true
+}

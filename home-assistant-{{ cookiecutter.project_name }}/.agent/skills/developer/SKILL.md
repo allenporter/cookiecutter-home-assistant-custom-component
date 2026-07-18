@@ -9,18 +9,19 @@ This skill teaches you how to interact with the codebase using standardized scri
 
 ## Core Scripts
 
-| Script | When to use |
-| :--- | :--- |
-| `script/bootstrap` | After cloning or when dependencies change. |
-| `script/setup` | Before starting to setup the virtual environment. |
-| `script/test` | Before submitting changes or to verify functionality. |
-| `script/lint` | Before committing to ensure code style and quality. 
-| `script/update` | When looking to sync down changes from the upstream repo. |
-| `script/server` | When you need a running server for integration testing or manual verification. |
+| Script             | When to use                                                                    |
+| :----------------- | :----------------------------------------------------------------------------- |
+| `script/bootstrap` | After cloning or when dependencies change.                                     |
+| `script/setup`     | Before starting to setup the virtual environment.                              |
+| `script/test`      | Before submitting changes or to verify functionality.                          |
+| `script/lint`      | Before committing to ensure code style and quality.                            |
+| `script/update`    | When looking to sync down changes from the upstream repo.                      |
+| `script/server`    | When you need a running server for integration testing or manual verification. |
 
 ## Usage Patterns
 
 ### Standard Development Flow
+
 1. **Initialize**: `./script/bootstrap`
 2. **Pre-requistes**: `./script/setup` to start development
 3. **Implement**: Make your changes to the code.
@@ -29,6 +30,7 @@ This skill teaches you how to interact with the codebase using standardized scri
 6. **Verify**: `./script/server` to run an ephemeral server for manual checks.
 
 ### Notes
+
 - All scripts are located in the `script/` directory at the project root.
 - Scripts are designed to be run from the project root.
 - The scripts will automatically use `uv` if it is installed, otherwise they will fall back to standard Python tools.
