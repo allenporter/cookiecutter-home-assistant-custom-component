@@ -57,6 +57,11 @@ jobs:
 
           cruft update --skip-apply-ask --refresh-private-variables
           git restore --staged .
+
+          if [ -n "$(find . -name '*.rej')" ]; then
+            echo "Error: Cruft template update produced merge conflicts (.rej files). Please resolve manually."
+            exit 1
+          fi
 {% raw %}
       - name: Create pull request
         if: steps.check.outputs.has_changes == '1'
