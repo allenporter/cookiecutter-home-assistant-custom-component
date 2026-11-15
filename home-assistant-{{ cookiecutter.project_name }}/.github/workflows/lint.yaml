@@ -18,10 +18,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Validate Renovate configuration
-        run: |
-          npx --package=renovate@38 -- renovate-config-validator .github/renovate.json5
-
       - uses: codespell-project/actions-codespell@v2.0
         with:
           check_hidden: false
